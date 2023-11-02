@@ -3,6 +3,7 @@ import { app } from '../firebase';
 import { useDispatch } from 'react-redux';
 import { signInSuccess } from '../redux/user/userSlice';
 import { useNavigate } from 'react-router-dom';
+import { FcGoogle } from 'react-icons/fc';
 
 export default function OAuth() {
   const dispatch = useDispatch();
@@ -29,16 +30,17 @@ export default function OAuth() {
       dispatch(signInSuccess(data));
       navigate('/');
     } catch (error) {
-      console.log('could not sign in with google', error);
+      console.log('could not sign in with Google', error);
     }
   };
   return (
     <button
       onClick={handleGoogleClick}
       type='button'
-      className='bg-red-700 text-white p-3 rounded-lg uppercase hover:opacity-95'
+      className='bg-white text-black p-3 rounded-lg uppercase hover:opacity-95 flex items-center'
     >
-      Continue with google
+      <span className="flex-grow">Continue with Google</span>
+      <FcGoogle size={"25px"} />
     </button>
   );
 }

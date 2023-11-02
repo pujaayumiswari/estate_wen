@@ -6,18 +6,37 @@ import authRouter from './routes/auth.route.js';
 import listingRouter from './routes/listing.route.js';
 import cookieParser from 'cookie-parser';
 import path from 'path';
+import { Console } from 'console';
 dotenv.config();
 
-mongoose
-  .connect(process.env.MONGO)
+// mongoose
+//   .connect(process.env.MONGO)
+//   .then(() => {
+//     console.log('Connected to MongoDB!');
+//   })
+//   .catch((err) => {
+//     console.log(err);
+//   });
+
+//   const __dirname = path.resolve();
+
+// const mongoose = require('mongoose');
+// const path = require('path'); // Pastikan Anda mengimpor modul 'path'
+
+const dbUri = process.env.MONGO; 
+
+mongoose.connect(dbUri, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => {
-    console.log('Connected to MongoDB!');
+    console.log('Terhubung ke MongoDB');
   })
   .catch((err) => {
-    console.log(err);
+    console.error('Koneksi MongoDB gagal: ', err);
   });
 
-  const __dirname = path.resolve();
+const __dirname = path.resolve(); // Pindahkan ini ke atas koneksi MongoDB
+
+// Sisanya dari kode Anda
+
 
 const app = express();
 

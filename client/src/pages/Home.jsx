@@ -48,21 +48,26 @@ export default function Home() {
   return (
     <div>
       {/* top */}
-      <div className='flex flex-col gap-6 p-28 px-3 max-w-6xl mx-auto'>
+      <div className='flex flex-col gap-6 p-28 px-3 max-w-6xl mx-auto scroll-smooth'>
         <h1 className='text-slate-700 font-bold text-3xl lg:text-6xl'>
-          Find your next <span className='text-slate-500'>perfect</span>
+          Find your next <span className='text-blue-800'>perfect</span>
           <br />
           place with ease
         </h1>
-        <div className='text-gray-400 text-xs sm:text-sm'>
-          Sahand Estate is the best place to find your next perfect place to
-          live.
+        <div className='text-blue-800 text-xs sm:text-lg'>
+        Find your ideal living space and create lasting memories with AYESTATE
+          <br />
+          With AYESTATE, finding your dream home is not just a possibility; it's a guarantee
+          <br />
+          Discover AYESTATE and embark on a journey to find the home of your dreams
+          <br />
+          AYESTATE: Where dreams of home ownership become beautiful realities
           <br />
           We have a wide range of properties for you to choose from.
         </div>
-        <Link
+        <Link 
           to={'/search'}
-          className='text-xs sm:text-sm text-blue-800 font-bold hover:underline'
+          className='text-4xl text-blue-800 font-bold hover:underline overscroll-auto'
         >
           Let's get started...
         </Link>
@@ -128,7 +133,15 @@ export default function Home() {
             </div>
           </div>
         )}
-      </div>
+      </div> 
+      <h1 className='text-slate-700 font-bold text-3xl lg:text-6xl p-6 justify-center flex'>
+          WELCOME TO <span className='text-blue-800'>AYESTATE</span>
+        </h1>
+    <div class="box-border hover:box-content p-20 hover:transition-all cursor-pointer "> 
+      <img src="https://images.unsplash.com/photo-1560184897-ae75f418493e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80" alt="AYESTATE" />
     </div>
+    </div>
+
+
   );
 }
