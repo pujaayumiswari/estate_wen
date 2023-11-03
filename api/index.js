@@ -7,23 +7,8 @@ import authRouter from "./routes/auth.route.js";
 import listingRouter from "./routes/listing.route.js";
 import cookieParser from "cookie-parser";
 import path from "path";
-import { Console } from "console";
 
-// mongoose
-//   .connect(process.env.MONGO)
-//   .then(() => {
-//     console.log('Connected to MongoDB!');
-//   })
-//   .catch((err) => {
-//     console.log(err);
-//   });
-
-//   const __dirname = path.resolve();
-
-// const mongoose = require('mongoose');
-// const path = require('path'); // Pastikan Anda mengimpor modul 'path'
-
-const dbUri = process.env.MONG0;
+const dbUri = process.env.MONGO;
 console.log(dbUri);
 
 mongoose
@@ -40,12 +25,13 @@ const __dirname = path.resolve();
 const app = express();
 
 app.use(express.json());
-
 app.use(cookieParser());
 
 app.listen(3000, () => {
   console.log("Server is running on port 3000!");
 });
+
+const baseURL = "http://localhost:3000"; // Base URL
 
 app.use("/api/user", userRouter);
 app.use("/api/auth", authRouter);
