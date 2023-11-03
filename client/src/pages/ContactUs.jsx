@@ -1,5 +1,5 @@
 import React from "react";
-import { ContactInputBox, ContactTextArea } from "./Contact";
+// import { ContactInputBox, ContactTextArea } from "./Contact";
 
 export const ContactUs = () => {
   return (

@@ -12,8 +12,7 @@ import Listing from './pages/Listing';
 import Search from './pages/Search';
 import Login from './pages/SignIn';
 import Services from './pages/Services';
-import Contact from './components/Contact';
-import ContactUs from './pages/ContactUs';
+
 
 export default function App() {
   return (
@@ -25,7 +24,7 @@ export default function App() {
         <Route path='/sign-up' element={<SignUp />} />
         <Route path='/about' element={<About />} />
         <Route path='/services' element={<Services />} />
-        <Route path='/contact' element={<ContactUs />} />
+        {/* <Route path='/contact' element={<ContactUs />} /> */}
         <Route path='/search' element={<Search />} />
         <Route path='/listing/:listingId' element={<Listing />} />
 
