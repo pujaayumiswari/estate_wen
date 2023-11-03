@@ -13,7 +13,7 @@ import Search from './pages/Search';
 import Login from './pages/SignIn';
 import Services from './pages/Services';
 import Contact from './components/Contact';
-import ContactUs from './pages/Contact.JSX';
+import ContactUs from './pages/ContactUs';
 
 export default function App() {
   return (
