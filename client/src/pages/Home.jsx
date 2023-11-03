@@ -5,6 +5,7 @@ import { Navigation } from 'swiper/modules';
 import SwiperCore from 'swiper';
 import 'swiper/css/bundle';
 import ListingItem from '../components/ListingItem';
+import ProductCard from '../components/Product';
 
 export default function Home() {
   const [offerListings, setOfferListings] = useState([]);
@@ -139,6 +140,10 @@ export default function Home() {
         </h1>
     <div class="box-border hover:box-content p-20 hover:transition-all cursor-pointer "> 
       <img src="https://images.unsplash.com/photo-1560184897-ae75f418493e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80" alt="AYESTATE" />
+    </div>
+    
+    <div className='p-5'>
+      <ProductCard />
     </div>
     </div>
 

@@ -46,7 +46,7 @@ export default function About() {
             </div>
 
            
-            <div class="max-w-sm mx-auto relative shadow-md rounded-lg cursor-pointer cursor-pointer">
+            <div class="max-w-sm mx-auto relative shadow-md rounded-lg cursor-pointer">
               <img src="https://images.unsplash.com/photo-1607567618395-62fc2d132c3e?auto=format&fit=crop&q=80&w=1936&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="w-full h-auto object-cover rounded-lg " />
               <div class="absolute bottom-0 left-0 right-0 h-40 bg-black bg-opacity-50 backdrop-blur text-white p-4 rounded-b-lg">
                 <h1 class="text-2xl font-semibold">Villa</h1>

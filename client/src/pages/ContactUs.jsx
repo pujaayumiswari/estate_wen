@@ -1,15 +1,7 @@
-
-// function Contact() {
-//   return (
-//     <div>Contact</div>
-//   )
-// }
-
-// export default Contact
-
 import React from "react";
+import { ContactInputBox, ContactTextArea } from "./Contact";
 
-const ContactUs = () => {
+export const ContactUs = () => {
   return (
     <>
       <section className="relative z-10 overflow-hidde py-20 dark:bg-dark lg:py-[120px] mt-20">
@@ -24,7 +16,10 @@ const ContactUs = () => {
                   GET IN TOUCH WITH US
                 </h2>
                 <p className="mb-9 text-base leading-relaxed text-body-color dark:text-dark-6 ml-5">
-                Feel free to get in touch with us at AYESTATE. Whether you have questions, feedback, or need assistance with your real estate journey, our dedicated team is here to help you every step of the way. We look forward to hearing from you
+                  Feel free to get in touch with us at AYESTATE. Whether you
+                  have questions, feedback, or need assistance with your real
+                  estate journey, our dedicated team is here to help you every
+                  step of the way. We look forward to hearing from you
                 </p>
                 <div className="mb-8 flex w-full max-w-[370px]">
                   <div className="mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-primary/5 text-primary sm:h-[70px] sm:max-w-[70px]">
@@ -46,7 +41,7 @@ const ContactUs = () => {
                       Our Location
                     </h4>
                     <p className="text-base text-body-color dark:text-dark-6">
-                     Tangerang Selatan
+                      Tangerang Selatan
                     </p>
                   </div>
                 </div>
@@ -963,39 +958,6 @@ const ContactUs = () => {
           </div>
         </div>
       </section>
-    </>
-  );
-};
-
-export default ContactUs;
-
-const ContactTextArea = ({ row, placeholder, name, defaultValue }) => {
-  return (
-    <>
-      <div className="mb-6">
-        <textarea
-          rows={row}
-          placeholder={placeholder}
-          name={name}
-          className="w-full resize-none rounded border border-stroke px-[14px] py-3 text-base text-body-color outline-none focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-dark-6"
-          defaultValue={defaultValue}
-        />
-      </div>
-    </>
-  );
-};
-
-const ContactInputBox = ({ type, placeholder, name }) => {
-  return (
-    <>
-      <div className="mb-6">
-        <input
-          type={type}
-          placeholder={placeholder}
-          name={name}
-          className="w-full rounded border border-stroke px-[14px] py-3 text-base text-body-color outline-none focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-dark-6"
-        />
-      </div>
     </>
   );
 };
